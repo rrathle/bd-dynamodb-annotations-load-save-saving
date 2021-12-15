@@ -1,10 +1,13 @@
-package com.amazon.ata.dynamodbannotationsloadsave.prework;
+package main;
 
-import com.amazon.ata.aws.dynamodb.DynamoDbClientProvider;
-import com.amazon.ata.dynamodbannotationsloadsave.prework.save.Book;
-import com.amazon.ata.dynamodbannotationsloadsave.prework.save.BookDao;
+//import com.amazon.ata.aws.dynamodb.DynamoDbClientProvider;
 
+import com.amazonaws.client.builder.AwsClientBuilder;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import main.Book;
+import main.BookDao;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,14 +26,11 @@ public class BookIntegrationTests {
     private void setup() {
         // PARTICIPANTS: use the DynamoDbClientProvider to get a client and create a DynamoDBMapper,
         //               then instantiate a BookDao for testing.
-<<<<<<< Updated upstream:BookIntegrationTests.java
-
-=======
->>>>>>> Stashed changes:tst/main/BookIntegrationTests.java
 
         // make sure the ASINs we don't expect in db aren't there before tests begin
         // (after getting a DynamoDBMapper)
         deleteTestData();
+
     }
 
     @AfterEach
