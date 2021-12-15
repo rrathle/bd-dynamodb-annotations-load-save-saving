@@ -1,4 +1,4 @@
-package main;
+package integrationTest;
 
 //import com.amazon.ata.aws.dynamodb.DynamoDbClientProvider;
 
