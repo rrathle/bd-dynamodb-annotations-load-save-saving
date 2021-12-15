@@ -23,7 +23,10 @@ public class BookIntegrationTests {
     private void setup() {
         // PARTICIPANTS: use the DynamoDbClientProvider to get a client and create a DynamoDBMapper,
         //               then instantiate a BookDao for testing.
+<<<<<<< Updated upstream:BookIntegrationTests.java
 
+=======
+>>>>>>> Stashed changes:tst/main/BookIntegrationTests.java
 
         // make sure the ASINs we don't expect in db aren't there before tests begin
         // (after getting a DynamoDBMapper)
