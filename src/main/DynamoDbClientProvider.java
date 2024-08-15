@@ -11,4 +11,5 @@ public class DynamoDbClientProvider {
             .build();
 
     public static AmazonDynamoDB REMOTE_CLIENT = AmazonDynamoDBClientBuilder.standard().withRegion("us-west-2").build();
+
 }
